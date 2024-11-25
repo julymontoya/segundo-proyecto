@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: 'fuente1';
+    src: url(../Montserrat/static/Montserrat-Black.ttf);
+
+}
+html{
+    font-size: 18px;
+    font-family: 'fuente1';
+    width: 100%;
+    height: 100%;
+    background-color: #070707;
+}
+body{
+    background-image: url(../imagenes/hamburguesa-beyond-meat-scaled-e1577396155298.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+    background-color: rgb(7, 7, 7);
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.encabezado{
+    min-height: 15vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 2%;
+}
+.encabezado .logo{
+    border-radius: 10%;
+    background-color: rgba(255, 255, 255, 0.3);
+    flex-basis: 19;
+}
+.encabezado .logo img{
+    width: 80px;
+    border-radius: 40%;
+
+}
+.encabezado .titulo{
+    flex-basis: 79%;
+}
+.encabezado .titulo h1{
+    font-size: 50px;
+    color:  #0c0c0c; 
+    margin-left: 200px; 
+    text-align: justify;  
+}
+.titulo p{
+    font-size: 40px;
+    color: #ffffff; 
+    text-align: justify;
+}
+nav{
+    min-height: 8vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 4%;
+    text-align: center;
+}
+.enlaces a{
+    text-decoration: none;
+    color: #faf7f7;
+    box-shadow: 3px 1px 3px 2px #f7f4f4;
+    width: 180px;
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    margin: 20px;  
+    
+}
+.enlaces a:hover{
+    background-color: #070707;
+    
+}
+main{
+    min-height: 150vh;
+   
+}
+main.menu{
+    width: 800px;
+    margin: 25px auto;
+    position: relative;
+    
+}
+.menu1{
+    position: absolute;
+    width: 25%;
+    top: 35%;
+    left: 56%;
+    text-align: center;
+
+}
+.menu2{
+    position: absolute;
+    width: 25%;
+    top: 29%;
+    right: 53%;
+    text-align: center;
+}
+.menu3{
+    position: absolute;
+    width: 25%;
+    top: 85%;
+    left: 14%;
+    text-align: center;
+}
+.menu4{
+    position: absolute;
+    width: 25%;
+    top: 102%;
+    left: 58%;
+    text-align: center;
+}
+.menu1:hover,
+ .menu2:hover,
+ .menu3:hover,
+ .menu4:hover{
+    background-color: rgba(248, 245, 245, 0.6);
+    transform: scale(1.2);
+    transition: all 2s;
+    cursor: pointer;
+}
+footer .redes{
+    min-height: 15vh;
+    position: relative;
+    background-color: rgba(0, 0, 0,0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+footer img{
+width: 60px;
+}
+footer .redes .email{
+    font-size: 18px;
+    position: absolute;
+    margin-top: 100px; 
+ }
+img{
+width: 100%;
+}
+@media screen and (max-width: 1000px){
+    .encabezado,
+    .enlaces,
+    .redes{
+       flex-direction: column-reverse;
+    }
+    .menu1,
+    .menu2,
+    .menu3,
+    .menu4{
+     position: unset;
+    }
+   }
+ 
+
